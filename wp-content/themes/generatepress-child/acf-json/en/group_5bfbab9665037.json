@@ -1,0 +1,49 @@
+{
+    "key": "group_5bfbab9665037",
+    "title": "Shipping time",
+    "fields": [
+        {
+            "key": "field_5bfbabc27b918",
+            "label": "Shipping within time",
+            "name": "shipping_within_time",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_rest": false,
+    "wpml_field_group_language": "en",
+    "modified": 1714977467,
+    "local_file": "\/home\/689526.cloudwaysapps.com\/fdhtdvrfjr\/public_html\/wp-content\/themes\/generatepress-child\/acf-json\/en\/group_5bfbab9665037.json",
+    "acfml_field_group_mode": "advanced"
+}

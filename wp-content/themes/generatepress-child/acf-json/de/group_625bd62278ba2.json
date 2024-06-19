@@ -1,0 +1,53 @@
+{
+    "key": "group_625bd62278ba2",
+    "title": "Kit Type - DE",
+    "fields": [
+        {
+            "key": "field_625bd635ec674",
+            "label": "Kit Type",
+            "name": "variscite_ups_kit_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "sm-starter": "Small Starter Kit",
+                "lg-starter": "Large Starter Kit",
+                "sm-dev": "Small Development Kit",
+                "lg-dev": "Large Development Kit"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "wpml_cf_preferences": 1,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "pa_kit"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "wpml_field_group_language": "de",
+    "modified": 1650185809
+}

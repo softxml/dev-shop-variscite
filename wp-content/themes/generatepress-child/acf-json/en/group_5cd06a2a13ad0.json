@@ -1,0 +1,56 @@
+{
+    "key": "group_5cd06a2a13ad0",
+    "title": "Attribute Price",
+    "fields": [
+        {
+            "key": "field_5cd06a42d1f47",
+            "label": "Attribute Price",
+            "name": "variscite_attribute_price",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Displayed on product pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "pa_kit"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "pa_som-configuration"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_rest": false,
+    "wpml_field_group_language": "en",
+    "modified": 1714977464,
+    "local_file": "\/home\/689526.cloudwaysapps.com\/fdhtdvrfjr\/public_html\/wp-content\/themes\/generatepress-child\/acf-json\/en\/group_5cd06a2a13ad0.json",
+    "acfml_field_group_mode": "advanced"
+}

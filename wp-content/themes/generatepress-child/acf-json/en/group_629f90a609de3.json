@@ -1,0 +1,24 @@
+{
+    "key": "group_629f90a609de3",
+    "title": "Options: Shipping Algorithm (copy)",
+    "fields": false,
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "variscite-shipping-algo"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "wpml_field_group_language": "en",
+    "modified": 1654624422
+}

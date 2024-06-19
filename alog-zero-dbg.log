@@ -1,0 +1,76 @@
+-----2023-09-13 12:52:48-----
+A '0' value was found in the shipping calculation for order number 19781
+
+            <strong>The field with value of '0' is </strong><br>
+            Billing First name: test<br>
+            Billing Last name: test<br>
+            Billing Company name: test<br>
+            Billing Email: test@test.com<br>
+            Billing Phone: 09988776655<br>
+            Billing Country: AT<br>
+            Registration number: <br>
+            Billing Address: test <br>
+            Billing State: <br>
+            Billing City: vienna<br>
+            Billing ZIP Code: 1413<br>
+            Shipping First name: <br>
+            Shipping Last name: <br>
+            Shipping Company name: <br>
+            Shipping Email: <br>
+            Shipping Phone: <br>
+            Shipping Country: <br>
+            Shipping Address: test <br>
+            Shipping City: vienna<br>
+            Shipping State: <br>
+            Shipping ZIP Code: 1413<br>
+            Notes: <br>
+            Estimated project quantities: <br>
+            <br>
+            <u>Ordered items:</u><br>
+        
+                Name: VAR-SOM-AM62 Evaluation Kits<br>
+                SKU: VAR-STK-AM62_LO<br>
+                Configuration: Kit: VAR-SOM-AM62 Starter Kit, SoM Configuration: VAR-SOM-AM62 SoM, Operating System: Linux<br>
+                Price: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>249.00</bdi></span><br>
+                Quantity: 1<br>
+                Total: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>249.00</bdi></span><br>
+            <br> Order Total: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>249.00</bdi></span>
+
+-----2023-09-13 14:24:36-----
+A '0' value was found in the shipping calculation for order number 19784
+
+            <strong>The field with value of '0' is Fuel multiplier</strong><br>
+            Billing First name: test<br>
+            Billing Last name: test<br>
+            Billing Company name: test<br>
+            Billing Email: test@test.com<br>
+            Billing Phone: 9988776655<br>
+            Billing Country: AT<br>
+            Registration number: <br>
+            Billing Address: test <br>
+            Billing State: <br>
+            Billing City: vienna<br>
+            Billing ZIP Code: 1413<br>
+            Shipping First name: <br>
+            Shipping Last name: <br>
+            Shipping Company name: <br>
+            Shipping Email: <br>
+            Shipping Phone: <br>
+            Shipping Country: <br>
+            Shipping Address: test <br>
+            Shipping City: vienna<br>
+            Shipping State: <br>
+            Shipping ZIP Code: 1413<br>
+            Notes: <br>
+            Estimated project quantities: <br>
+            <br>
+            <u>Ordered items:</u><br>
+        
+                Name: VAR-SOM-AM62 Evaluation Kits<br>
+                SKU: VAR-STK-AM62_LO<br>
+                Configuration: Kit: VAR-SOM-AM62 Starter Kit, SoM Configuration: VAR-SOM-AM62 SoM, Operating System: Linux<br>
+                Price: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>249.00</bdi></span><br>
+                Quantity: 1<br>
+                Total: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>249.00</bdi></span><br>
+            <br> Order Total: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>249.00</bdi></span>
+

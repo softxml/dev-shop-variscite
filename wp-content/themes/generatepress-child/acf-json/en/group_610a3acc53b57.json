@@ -1,0 +1,304 @@
+{
+    "key": "group_610a3acc53b57",
+    "title": "SOM Product Setting",
+    "fields": [
+        {
+            "key": "field_63bb458808f7d",
+            "label": "Hide text?",
+            "name": "product_som_display_add_text",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Hide text after product content and before buttons",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_63bc304904c93",
+            "label": "Change Variations Title",
+            "name": "product_variations_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Default Variations Title test \"Samples for Evaluation and Prototype\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_610a3b4a6cf10",
+            "label": "Hide shipping message?",
+            "name": "produc_som_shipping_message_display",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_610a3ae631e53",
+            "label": "Change Shipping message content",
+            "name": "produc_som_shipping_message_content",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Default Shipping message content \"Ships within 4 working days\"",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_610a3b4a6cf10",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63bb434a3e9d7",
+            "label": "Display Contact button?",
+            "name": "product_som_shipping_contact_button_display",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_63bb434e3e9d8",
+            "label": "Change Contact link",
+            "name": "product_som_contact_button_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Default Contact button link https:\/\/woocommerce-689526-4599505.cloudwaysapps.com\/contact-us\/",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_63eb7cc2aa174",
+            "label": "Display SOM Special Offer?",
+            "name": "product_display_som_special_offer",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_64dcf1a1aae5b",
+            "label": "SOM Special Offer Quantity?",
+            "name": "product_display_som_special_offer_quantity",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63eb7cc2aa174",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Default quantity 1000",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63f74266b9bc8",
+            "label": "Select Display SOM Special Offer Product Variation",
+            "name": "product_display_som_special_offer_product_variation",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63eb7cc2aa174",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": [],
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6461f290c0359",
+            "label": "Display Selected SOM Special Offer Product Variation Item?",
+            "name": "product_display_som_special_offer_product_variation_item",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63eb7cc2aa174",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_63f79833b4f10",
+            "label": "Add Display SOM Special Offer Product Variation Before Title",
+            "name": "product_display_som_special_offer_product_variation_before_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Default Add Display SOM Special Offer Product Variation Before Title text \"Baseline Configuration\"",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63eb7cc2aa174",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "Baseline Configuration",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "product_cat:system-on-module"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "advanced",
+    "modified": 1714977467,
+    "wpml_field_group_language": "en",
+    "local_file": "\/home\/689526.cloudwaysapps.com\/fdhtdvrfjr\/public_html\/wp-content\/themes\/generatepress-child\/acf-json\/en\/group_610a3acc53b57.json"
+}

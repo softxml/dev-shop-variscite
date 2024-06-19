@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),document.addEventListener("DOMContentLoaded",(()=>{this.p()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}k(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.M(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.O()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.O()}D(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}S(){return new Promise((t=>{this.T?this.O=t:t()}))}C(){this.T=!0}O(){this.T=!1}M(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}p(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.j(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.P(this),this.F(this),this.q(),this.A(),this.I(),await this.U(this.delayedScripts.normal),await this.U(this.delayedScripts.defer),await this.U(this.delayedScripts.async);try{await this.W(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.S().then((()=>{this.D()})),this.N()}A(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(function(){t.setAttribute("data-rocket-status","failed"),e()})),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed"),e()}}));t.setAttribute("data-rocket-status","skipped")}async U(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.U(t)):Promise.resolve()}I(){this.j([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}j(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o){const n=document.createElement("link");n.href=o,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),i.appendChild(n),this.trash.push(n)}})),document.head.appendChild(i)}P(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function n(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(n){t.everythingLoaded?o=n:e["rocket"+i]=o=n}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){if(o&&o.fn&&!t.allJQueries.includes(o)){o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])};const e=o.fn.on;o.fn.on=o.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this},t.allJQueries.push(o)}e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async W(){this.domReadyFired=!0,await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}q(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),n=i.parentElement;let s=t.get(i);void 0===s&&(s=i.nextSibling,t.set(i,s));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),n.insertBefore(c,s)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.k(t)}}RocketLazyLoadScripts.run()})();</script>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta name='robots' content='noindex, nofollow' />
+<link rel="alternate" hreflang="en" href="https://shop-office.variscite.co.uk" />
+<link rel="alternate" hreflang="de" href="https://shop.variscite.de" />
+<link rel="alternate" hreflang="x-default" href="https://shop-office.variscite.co.uk" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- This site is optimized with the Yoast SEO plugin v22.6 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Variscite Online-Store | System on Module, Evaluation kits &amp; Accessories</title>
+	<meta name="description" content="The online store provides an easy &amp; fast way to buy Variscite&#039;s feature products: System on Modules &amp; Evaluation kits based on NXP, TI &amp; Qualcomm processors" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Variscite Online-Store | System on Module, Evaluation kits &amp; Accessories" />
+	<meta property="og:description" content="The online store provides an easy &amp; fast way to buy Variscite&#039;s feature products: System on Modules &amp; Evaluation kits based on NXP, TI &amp; Qualcomm processors" />
+	<meta property="og:url" content="https://shop-office.variscite.co.uk/" />
+	<meta property="og:site_name" content="Variscite Online store" />
+	<meta property="article:modified_time" content="2022-04-06T09:55:52+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://shop-office.variscite.co.uk/","url":"https://shop-office.variscite.co.uk/","name":"Variscite Online-Store | System on Module, Evaluation kits & Accessories","isPartOf":{"@id":"https://shop-office.variscite.co.uk/#website"},"primaryImageOfPage":{"@id":"https://shop-office.variscite.co.uk/#primaryimage"},"image":{"@id":"https://shop-office.variscite.co.uk/#primaryimage"},"thumbnailUrl":"https://shop-office.variscite.co.uk/wp-content/uploads/2024/05/shop-DART-MX95-Development-Kit.jpg","datePublished":"2018-10-27T17:48:01+00:00","dateModified":"2022-04-06T09:55:52+00:00","description":"The online store provides an easy & fast way to buy Variscite's feature products: System on Modules & Evaluation kits based on NXP, TI & Qualcomm processors","breadcrumb":{"@id":"https://shop-office.variscite.co.uk/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://shop-office.variscite.co.uk/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://shop-office.variscite.co.uk/#primaryimage","url":"https://shop-office.variscite.co.uk/wp-content/uploads/2024/05/shop-DART-MX95-Development-Kit.jpg","contentUrl":"https://shop-office.variscite.co.uk/wp-content/uploads/2024/05/shop-DART-MX95-Development-Kit.jpg","width":444,"height":444,"caption":"shop DART-MX95 Development Kit"},{"@type":"BreadcrumbList","@id":"https://shop-office.variscite.co.uk/#breadcrumb","itemListElement":{"@type":"ListItem","position":1,"name":"Variscite Online Store"}},{"@type":"WebSite","@id":"https://shop-office.variscite.co.uk/#website","url":"https://shop-office.variscite.co.uk/","name":"Variscite Online store","description":"Leading System On Module manufacturer","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://shop-office.variscite.co.uk/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<meta name="google-site-verification" content="ytlE1ZtL1kqjOQ4ecNgqrcnfxSHD9KJoaYnnvMKSnR8" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//shop-office.variscite.co.uk' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//shop.variscite.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link href='https://fonts.googleapis.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Variscite Online store &raquo; Feed" href="https://shop-office.variscite.co.uk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Variscite Online store &raquo; Comments Feed" href="https://shop-office.variscite.co.uk/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Variscite Online store &raquo; Products Feed" href="https://shop-office.variscite.co.uk/shop/feed/" />
+<!-- Google Tag Manager -->
+        <script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NZ6BXV');</script>
+        <!-- End Google Tag Manager -->
+
+<link rel='stylesheet' id='generate-fonts-css' href='//fonts.googleapis.com/css?family=Roboto:100,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-includes/css/dist/block-library/style.min.css?ver=6.5.2' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--contrast: var(--contrast);--wp--preset--color--contrast-2: var(--contrast-2);--wp--preset--color--contrast-3: var(--contrast-3);--wp--preset--color--base: var(--base);--wp--preset--color--base-2: var(--base-2);--wp--preset--color--base-3: var(--base-3);--wp--preset--color--accent: var(--accent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='wcml-dropdown-0-css' href='https://shop-office.variscite.co.uk/wp-content/cache/min/1/wp-content/plugins/woocommerce-multilingual/templates/currency-switchers/legacy-dropdown/style.css?ver=1716969821' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.8.3' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.8.3' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.8.3' media='all' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: hidden; }
+</style>
+<link data-minify="1" rel='stylesheet' id='wpml-legacy-dropdown-click-0-css' href='https://shop-office.variscite.co.uk/wp-content/cache/min/1/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/style.min.css?ver=1716969821' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpml-menu-item-0-css' href='https://shop-office.variscite.co.uk/wp-content/cache/min/1/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.min.css?ver=1716969821' media='all' />
+<link rel='stylesheet' id='generate-style-grid-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress/assets/css/unsemantic-grid.min.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='generate-style-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress/assets/css/style.min.css?ver=3.4.0' media='all' />
+<style id='generate-style-inline-css'>
+body{background-color:#ffffff;color:#3a3a3a;}a{color:#1e73be;}a:hover, a:focus, a:active{color:#000000;}body .grid-container{max-width:2000px;}.wp-block-group__inner-container{max-width:2000px;margin-left:auto;margin-right:auto;}:root{--contrast:#222222;--contrast-2:#575760;--contrast-3:#b2b2be;--base:#f0f0f0;--base-2:#f7f8f9;--base-3:#ffffff;--accent:#1e73be;}:root .has-contrast-color{color:var(--contrast);}:root .has-contrast-background-color{background-color:var(--contrast);}:root .has-contrast-2-color{color:var(--contrast-2);}:root .has-contrast-2-background-color{background-color:var(--contrast-2);}:root .has-contrast-3-color{color:var(--contrast-3);}:root .has-contrast-3-background-color{background-color:var(--contrast-3);}:root .has-base-color{color:var(--base);}:root .has-base-background-color{background-color:var(--base);}:root .has-base-2-color{color:var(--base-2);}:root .has-base-2-background-color{background-color:var(--base-2);}:root .has-base-3-color{color:var(--base-3);}:root .has-base-3-background-color{background-color:var(--base-3);}:root .has-accent-color{color:var(--accent);}:root .has-accent-background-color{background-color:var(--accent);}body, button, input, select, textarea{font-family:"Roboto", sans-serif;font-size:16px;}body{line-height:1.5;}.entry-content > [class*="wp-block-"]:not(:last-child):not(.wp-block-heading){margin-bottom:1.5em;}.main-title{font-size:45px;}.main-navigation a, .menu-toggle{font-family:"Roboto", sans-serif;font-size:16px;}.main-navigation .main-nav ul ul li a{font-size:15px;}.widget-title{font-family:"Roboto", sans-serif;}.sidebar .widget, .footer-widgets .widget{font-size:16px;}h1{font-weight:300;font-size:40px;}h2{font-weight:300;font-size:30px;}h3{font-size:20px;}h4{font-size:inherit;}h5{font-size:inherit;}.site-info{font-family:"Roboto", sans-serif;font-size:14px;}@media (max-width:768px){.main-title{font-size:30px;}h1{font-size:30px;}h2{font-size:25px;}}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ffffff;color:#3a3a3a;}.site-header a{color:#3a3a3a;}.main-title a,.main-title a:hover{color:#222222;}.site-description{color:#757575;}.mobile-menu-control-wrapper .menu-toggle,.mobile-menu-control-wrapper .menu-toggle:hover,.mobile-menu-control-wrapper .menu-toggle:focus,.has-inline-mobile-toggle #site-navigation.toggled{background-color:rgba(0, 0, 0, 0.02);}.main-navigation,.main-navigation ul ul{background-color:#ffffff;}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:#000000;}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:#0056a5;background-color:#ffffff;}button.menu-toggle:hover,button.menu-toggle:focus,.main-navigation .mobile-bar-items a,.main-navigation .mobile-bar-items a:hover,.main-navigation .mobile-bar-items a:focus{color:#000000;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#0056a5;background-color:#ffffff;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:#0056a5;background-color:#ffffff;}.main-navigation ul ul{background-color:#3f3f3f;}.main-navigation .main-nav ul ul li a{color:#ffffff;}.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover > a,.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"]) > a{color:#ffffff;background-color:#4f4f4f;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#4f4f4f;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:#ffffff;}.entry-meta{color:#595959;}.entry-meta a{color:#595959;}.entry-meta a:hover{color:#1e73be;}.sidebar .widget{background-color:#ffffff;}.sidebar .widget .widget-title{color:#000000;}.footer-widgets{color:#ffffff;background-color:#262626;}.footer-widgets a{color:#ffffff;}.footer-widgets a:hover{color:#ffffff;}.footer-widgets .widget-title{color:#ffffff;}.site-info{color:#ffffff;background-color:#262626;}.site-info a{color:#ffffff;}.site-info a:hover{color:#606060;}.footer-bar .widget_nav_menu .current-menu-item a{color:#606060;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#fafafa;border-color:#cccccc;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#bfbfbf;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#f56323;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f3f3f;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}:root{--gp-search-modal-bg-color:var(--base-3);--gp-search-modal-text-color:var(--contrast);--gp-search-modal-overlay-bg-color:rgba(0,0,0,0.2);}@media (max-width:768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:#000000;}}.inside-top-bar{padding:10px;}.inside-header{padding:0px;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:36px 40px 100px 40px;}.site-main .wp-block-group__inner-container{padding:36px 40px 100px 40px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.separate-containers .widget, .separate-containers .site-main > *, .separate-containers .page-header, .widget-area .main-navigation{margin-bottom:0px;}.separate-containers .site-main{margin:0px;}.both-right.separate-containers .inside-left-sidebar{margin-right:0px;}.both-right.separate-containers .inside-right-sidebar{margin-left:0px;}.both-left.separate-containers .inside-left-sidebar{margin-right:0px;}.both-left.separate-containers .inside-right-sidebar{margin-left:0px;}.separate-containers .page-header-image, .separate-containers .page-header-contained, .separate-containers .page-header-image-single, .separate-containers .page-header-content-single{margin-top:0px;}.separate-containers .inside-right-sidebar, .separate-containers .inside-left-sidebar{margin-top:0px;margin-bottom:0px;}.main-navigation .main-nav ul li a,.menu-toggle,.main-navigation .mobile-bar-items a{padding-left:10px;padding-right:10px;line-height:40px;}.main-navigation .main-nav ul ul li a{padding:10px;}.navigation-search input[type="search"]{height:40px;}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:10px;}.menu-item-has-children .dropdown-menu-toggle{padding-right:10px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:10px;}.widget-area .widget{padding:0px;}.footer-widgets{padding:45px 40px 45px 40px;}.site-info{padding:30px 20px 30px 20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:30px;}.site-main .wp-block-group__inner-container{padding:30px;}.site-info{padding-right:10px;padding-left:10px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}}.navigation-search, .navigation-search input{height:100%;}/* End cached CSS */@media (max-width:768px){.main-navigation .menu-toggle,.main-navigation .mobile-bar-items,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav{display:none;}[class*="nav-float-"] .site-header .inside-header > *{float:none;clear:both;}}
+.main-navigation .slideout-toggle a:before,.slide-opened .slideout-overlay .slideout-exit:before{font-family:GeneratePress;}.slideout-navigation .dropdown-menu-toggle:before{content:"\f107" !important;}.slideout-navigation .sfHover > a .dropdown-menu-toggle:before{content:"\f106" !important;}
+.main-navigation .navigation-logo img {height:40px;}@media (max-width: 2010px) {.main-navigation .navigation-logo.site-logo {margin-left:0;}body.sticky-menu-logo.nav-float-left .main-navigation .site-logo.navigation-logo {margin-right:0;}}
+.slideout-navigation.main-navigation .main-nav ul li a{font-weight:normal;text-transform:none;}
+.page-hero{background-image:url(https://shop-office.variscite.co.uk/wp-content/uploads/2018/10/vari-home-1.png);background-size:cover;background-position:center center;background-repeat:no-repeat;color:#ffffff;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;text-align:center;box-sizing:border-box;}.page-hero h1, .page-hero h2, .page-hero h3, .page-hero h4, .page-hero h5, .page-hero h6{color:#ffffff;}.inside-page-hero > *:last-child{margin-bottom:0px;}.page-hero time.updated{display:none;}
+</style>
+<link rel='stylesheet' id='generate-mobile-style-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress/assets/css/mobile.min.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='generate-font-icons-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress/assets/css/components/font-icons.min.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='generate-blog-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/gp-premium/blog/functions/css/style-min.css?ver=1.7.2' media='all' />
+<link rel='stylesheet' id='generate-secondary-nav-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/gp-premium/secondary-nav/functions/css/style.min.css?ver=1.7.2' media='all' />
+<style id='generate-secondary-nav-inline-css'>
+.secondary-navigation{background-color:#636363;}.secondary-navigation .main-nav ul li a,.secondary-navigation .menu-toggle{color:#ffffff;font-family:"Roboto", sans-serif;font-size:16px;}button.secondary-menu-toggle:hover,button.secondary-menu-toggle:focus{color:#ffffff;}.widget-area .secondary-navigation{margin-bottom:0px;}.secondary-navigation ul ul{background-color:#303030;top:auto;}.secondary-navigation .main-nav ul ul li a{color:#ffffff;font-size:15px;}.secondary-navigation .main-nav ul li:hover > a,.secondary-navigation .main-nav ul li:focus > a,.secondary-navigation .main-nav ul li.sfHover > a{color:#ffffff;background-color:#303030;}.secondary-navigation .main-nav ul ul li:hover > a,.secondary-navigation .main-nav ul ul li:focus > a,.secondary-navigation .main-nav ul ul li.sfHover > a{color:#ffffff;background-color:#474747;}.secondary-navigation .main-nav ul li[class*="current-menu-"] > a, .secondary-navigation .main-nav ul li[class*="current-menu-"] > a:hover,.secondary-navigation .main-nav ul li[class*="current-menu-"].sfHover > a{color:#222222;background-color:#ffffff;}.secondary-navigation .main-nav ul ul li[class*="current-menu-"] > a,.secondary-navigation .main-nav ul ul li[class*="current-menu-"] > a:hover,.secondary-navigation .main-nav ul ul li[class*="current-menu-"].sfHover > a{color:#ffffff;background-color:#474747;}
+</style>
+<link rel='stylesheet' id='generate-secondary-nav-mobile-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/gp-premium/secondary-nav/functions/css/mobile.min.css?ver=1.7.2' media='all' />
+<link rel='stylesheet' id='generate-menu-logo-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/gp-premium/menu-plus/functions/css/menu-logo.min.css?ver=1.7.2' media='all' />
+<link rel='stylesheet' id='generate-woocommerce-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/gp-premium/woocommerce/functions/css/woocommerce.min.css?ver=1.7.2' media='all' />
+<style id='generate-woocommerce-inline-css'>
+.woocommerce ul.products li.product .woocommerce-LoopProduct-link h2, .woocommerce ul.products li.product .woocommerce-loop-category__title{font-weight:normal;text-transform:none;font-size:20px;}.woocommerce .up-sells ul.products li.product .woocommerce-LoopProduct-link h2, .woocommerce .cross-sells ul.products li.product .woocommerce-LoopProduct-link h2, .woocommerce .related ul.products li.product .woocommerce-LoopProduct-link h2{font-size:20px;}.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{color:#ffffff;background-color:#f56323;font-weight:normal;text-transform:none;}.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{color:#ffffff;background-color:#3f3f3f;}.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover{color:#ffffff;background-color:#1e73be;}.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{color:#ffffff;background-color:#377fbf;}.woocommerce .star-rating span:before, .woocommerce .star-rating:before{color:#ffa200;}.woocommerce span.onsale{background-color:#222222;color:#ffffff;}.woocommerce ul.products li.product .price, .woocommerce div.product p.price{color:#222222;}.woocommerce div.product .woocommerce-tabs ul.tabs li a{color:#222222;}.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active a{color:#1e73be;}.woocommerce-message{background-color:#0b9444;color:#ffffff;}div.woocommerce-message a.button, div.woocommerce-message a.button:focus, div.woocommerce-message a.button:hover, div.woocommerce-message a, div.woocommerce-message a:focus, div.woocommerce-message a:hover{color:#ffffff;}.woocommerce-info{background-color:#1e73be;color:#ffffff;}div.woocommerce-info a.button, div.woocommerce-info a.button:focus, div.woocommerce-info a.button:hover, div.woocommerce-info a, div.woocommerce-info a:focus, div.woocommerce-info a:hover{color:#ffffff;}.woocommerce-error{background-color:#e8626d;color:#ffffff;}div.woocommerce-error a.button, div.woocommerce-error a.button:focus, div.woocommerce-error a.button:hover, div.woocommerce-error a, div.woocommerce-error a:focus, div.woocommerce-error a:hover{color:#ffffff;}.woocommerce-product-details__short-description{color:#3a3a3a;}
+</style>
+<link rel='stylesheet' id='generate-woocommerce-mobile-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/gp-premium/woocommerce/functions/css/woocommerce-mobile.min.css?ver=1.7.2' media='(max-width:768px)' />
+<link rel='stylesheet' id='gp-premium-icons-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/gp-premium/general/icons/icons.min.css?ver=1.7.2' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/bootstrap/css/bootstrap.min.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='bootstrap-theme-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/bootstrap/css/bootstrap-theme.min.css?ver=1.0.0' media='all' />
+<link data-minify="1" rel='stylesheet' id='font-awesome-var-css' href='https://shop-office.variscite.co.uk/wp-content/cache/min/1/releases/v6.4.2/css/all.css?ver=1716969821' media='all' />
+<link rel='stylesheet' id='child-style-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/style.css?ver=1716968541' media='all' />
+<link rel='stylesheet' id='slick-css-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/slick/slick.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='slick-theme-css-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/slick/slick-theme.css?ver=1.0.0' media='all' />
+<script id="wpml-cookie-js-extra">
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=4.6.10" id="wpml-cookie-js" defer data-wp-strategy="defer"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/js/jquery.min.js?ver=2.4.4" id="jquery-js"></script>
+<script id="global-ajaxfunc-js-extra">
+var ajax_object = {"ajaxurl":"https:\/\/shop-office.variscite.co.uk\/wp-admin\/admin-ajax.php"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/variscite-salesforce//assets/js/global-ajax.js?ver=6.5.2" id="global-ajaxfunc-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.8.3" id="jquery-blockui-js" defer data-wp-strategy="defer"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/shop-office.variscite.co.uk\/cart\/","is_cart":"","cart_redirect_after_add":"yes"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.8.3" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.8.3" id="js-cookie-js" defer data-wp-strategy="defer"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.8.3" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://shop-office.variscite.co.uk/wp-content/cache/min/1/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/script.min.js?ver=1716969822" id="wpml-legacy-dropdown-click-0-js" defer></script>
+<script id="scripts.js-js-extra">
+var myAjax = {"ajaxurl":"https:\/\/shop-office.variscite.co.uk\/wp-admin\/admin-ajax.php"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/scripts.js?ver=1.0" id="scripts.js-js" defer></script>
+<script id="wpml-xdomain-data-js-extra">
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"https:\/\/shop-office.variscite.co.uk\/wp-admin\/admin-ajax.php","current_lang":"en","_nonce":"abad670faa"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/sitepress-multilingual-cms/res/js/xdomain-data.js?ver=4.6.10" id="wpml-xdomain-data-js" defer data-wp-strategy="defer"></script>
+<link rel="https://api.w.org/" href="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://shop-office.variscite.co.uk/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.2" />
+<meta name="generator" content="WooCommerce 8.8.3" />
+<meta name="generator" content="WPML ver:4.6.10 stt:1,3;" />
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.21.4; features: e_optimized_assets_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<link rel="icon" href="https://shop-office.variscite.co.uk/wp-content/uploads/2020/01/favicon-2-1.png" sizes="32x32" />
+<link rel="icon" href="https://shop-office.variscite.co.uk/wp-content/uploads/2020/01/favicon-2-1.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://shop-office.variscite.co.uk/wp-content/uploads/2020/01/favicon-2-1.png" />
+<meta name="msapplication-TileImage" content="https://shop-office.variscite.co.uk/wp-content/uploads/2020/01/favicon-2-1.png" />
+
+    <!--=== CUSTOM LOAD TIME CALCULATION ===-->
+    <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        var timerStart = Date.now();
+    </script>
+</head>
+
+<body itemtype='https://schema.org/Blog' itemscope='itemscope' class="home archive post-type-archive post-type-archive-product wp-embed-responsive theme-generatepress post-image-below-header post-image-aligned-center secondary-nav-below-header secondary-nav-aligned-right sticky-menu-fade regular-menu-logo menu-logo-enabled woocommerce-shop woocommerce woocommerce-page woocommerce-no-js left-sidebar nav-above-header separate-containers fluid-header active-footer-widgets-2 nav-aligned-right header-aligned-left dropdown-hover elementor-default elementor-kit-11202">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ6BXV"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!--=== CUSTOM LOAD TIME CALCULATION ===-->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    $(document).ready(function() {
+        console.log("Time until DOMready (GTM fires): ms", Date.now()-timerStart);
+    });
+    $(window).load(function() {
+        console.log("Time until everything on page loaded: ms", Date.now()-timerStart);
+    });
+</script>
+
+<div class="overlay"></div>
+		<nav class="wc-menu-cart-activated main-navigation sub-menu-right" id="site-navigation" aria-label="Primary"  itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation">
+				<div class="site-logo sticky-logo navigation-logo">
+				<a href="https://shop-office.variscite.co.uk/" title="Variscite Online store" rel="home">
+					<img class="header-image" src="https://shop-office.variscite.co.uk/wp-content/uploads/2019/02/Logo-Variscite.png" alt="Variscite Online store" />
+				</a>
+			</div>    <div class="mobile-bar-items wc-mobile-cart-items">
+        <div class="language-switcher bottom-language-switcher">
+            <ul><li>en<ul class="language-dropup"><li><a class="active" href="https://shop-office.variscite.co.uk">English</a></li><li><a href="https://shop.variscite.de">Deutsch</a></li></ul></li></li></ul>        </div>
+                    <a href="https://shop-office.variscite.co.uk/cart/" class="cart-contents" title="View your shopping cart">
+    </a>
+    </div><!-- .mobile-bar-items -->
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="mobile-menu">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-menu-1" class=" menu sf-menu"><li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item current_page_item menu-item-20"><a href="https://shop-office.variscite.co.uk/" aria-current="page">Products</a></li>
+<li id="menu-item-816" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-816"><a href="https://www.variscite.com">Variscite Main Site</a></li>
+<li id="menu-item-482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-482"><a href="https://shop-office.variscite.co.uk/contact-us/">Contact Us</a></li>
+<li id="menu-item-162" class="continue_shopping menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item current_page_item menu-item-162"><a href="https://shop-office.variscite.co.uk/" aria-current="page">Continue shopping</a></li>
+<li id="menu-item-wpml-ls-16-en" class="menu-item wpml-ls-slot-16 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-has-children menu-item-wpml-ls-16-en"><a title="English" href="https://shop-office.variscite.co.uk"><img
+            class="wpml-ls-flag"
+            src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
+            alt=""
+            width=18
+            height=12
+    /><span class="wpml-ls-native" lang="en">English</span><span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-wpml-ls-16-de" class="menu-item wpml-ls-slot-16 wpml-ls-item wpml-ls-item-de wpml-ls-menu-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-16-de"><a title="Deutsch" href="https://shop.variscite.de"><img
+            class="wpml-ls-flag"
+            src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/de.png"
+            alt=""
+            width=18
+            height=12
+    /><span class="wpml-ls-native" lang="de">Deutsch</span></a></li>
+</ul>
+</li>
+ 
+                <li class="wc-menu-item " title="View your shopping cart">
+                        <a href="https://shop-office.variscite.co.uk/cart/" class="cart-contents" title="View your shopping cart">
+    </a>
+<ul class="cart_menu"></ul></li></ul></div>			</div>
+		</nav>
+				<header class="site-header" id="masthead" aria-label="Site"  itemtype="https://schema.org/WPHeader" itemscope>
+			<div class="inside-header grid-container grid-parent">
+							</div>
+		</header>
+		<div class="page-hero  shop_header">
+				<div class="inside-page-hero grid-container grid-parent">
+					<!-- page header -->
+<div class="header_breadcrumbs">
+	
+</div>
+
+<div class="container">
+	<h1 class="header_title">Variscite Online-Store</h1>
+</div>
+
+				</div>
+			</div>
+<div id="page" class="hfeed site grid-container container grid-parent">
+    <div id="content" class="site-content">
+		<div class="content-area grid-parent mobile-grid-100 push-20 grid-80 tablet-push-20 tablet-grid-80" id="primary">
+			<main class="site-main" id="main">
+								<div class="woocommerce-archive-wrapper">
+					<div class="inside-article">
+												<div class="entry-content" itemprop="text">
+		<header class="woocommerce-products-header">
+	
+	</header>
+<div class="wc_grid_mode">
+        <button class="btn btn-link active" id="rows" data-grid="rows"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22"> <g  fill-rule="evenodd"> <path d="M6 0h18v4H6zM6 12h18v4H6zM6 18h18v4H6zM6 6h18v4H6zM0 0h4v4H0zM0 12h4v4H0zM0 18h4v4H0zM0 6h4v4H0z"></path> </g> </svg> </button>
+        <button class="btn btn-link" id="grid" data-grid="grid"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"> <g  fill-rule="evenodd"> <path d="M0 0h10v10H0zM12 0h10v10H12zM0 12h10v10H0zM12 12h10v10H12z"></path> </g> </svg> </button>
+    </div>    <div class="mobile_filter_wrap">
+        <div class="mobile_filter_icon">
+            <i class="fa fa-filter" aria-hidden="true"></i>
+        </div>
+        <div class="clear_filter">
+            <a href="https://shop-office.variscite.co.uk">Clear</a>
+        </div>
+    </div>
+<div class="wc-columns-2 wc-mobile-columns-1"><div class="woocommerce-notices-wrapper"></div>
+<div class="wc_result_count_wrap">
+    <p class="woocommerce-result-count">
+        Showing 1&ndash;15 of 59 results    </p>
+</div>
+
+
+<ul class="products columns-2">
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left wc-has-gallery product type-product post-21724 status-publish first outofstock product_cat-evaluation-kit has-post-thumbnail taxable shipping-taxable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/evaluation-kit/dart-mx95-evaluation-kits/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img fetchpriority="high" width="444" height="444" src="https://shop-office.variscite.co.uk/wp-content/uploads/2024/05/shop-DART-MX95-Starter-Kit.jpg" class="secondary-image attachment-shop-catalog" alt="shop DART-MX95 Starter Kit" decoding="async" srcset="https://shop-office.variscite.co.uk/wp-content/uploads/2024/05/shop-DART-MX95-Starter-Kit.jpg 444w, https://shop-office.variscite.co.uk/wp-content/uploads/2024/05/shop-DART-MX95-Starter-Kit-300x300.jpg 300w, https://shop-office.variscite.co.uk/wp-content/uploads/2024/05/shop-DART-MX95-Starter-Kit-150x150.jpg 150w, https://shop-office.variscite.co.uk/wp-content/uploads/2024/05/shop-DART-MX95-Starter-Kit-100x100.jpg 100w" sizes="(max-width: 444px) 100vw, 444px" /><img width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2024/05/shop-DART-MX95-Evaluation-kits.png" alt="DART-MX95 Evaluation Kits"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">DART-MX95 Evaluation Kits</h2>
+</div><div class="product_short_description"><p>DART-MX95 Development Kit and Starter Kit, based on NXP i.MX 95 processor.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/dart-mx95-evaluation-kits/" data-quantity="1" class="button add_to_cart_button" data-type="Evaluation kit" data-price="0" data-product_id="21724" data-product_sku="" data-name="DART-MX95 Evaluation Kits"  aria-label="Select options for “DART-MX95 Evaluation Kits”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left product type-product post-21745 status-publish last outofstock product_cat-system-on-module has-post-thumbnail taxable shipping-taxable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/system-on-module/dart-mx95-system-on-module/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2024/05/thumb-DART-MX95-SoM.png" alt="DART-MX95 System on Module"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">DART-MX95 System on Module</h2>
+</div><div class="product_short_description"><p>DART-MX95 System on Module, based on NXP i.MX 95.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/system-on-module/dart-mx95-system-on-module/" data-quantity="1" class="button add_to_cart_button" data-type="System on Module" data-price="0" data-product_id="21745" data-product_sku="" data-name="DART-MX95 System on Module"  aria-label="Select options for “DART-MX95 System on Module”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left wc-has-gallery product type-product post-17132 status-publish first instock product_cat-evaluation-kit has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx93-evaluation-kits/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="444" height="444" src="https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/VAR-SOM-MX93-STK.jpg" class="secondary-image attachment-shop-catalog" alt="VAR-SOM-MX93-STK" decoding="async" srcset="https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/VAR-SOM-MX93-STK.jpg 444w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/VAR-SOM-MX93-STK-300x300.jpg 300w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/VAR-SOM-MX93-STK-150x150.jpg 150w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/VAR-SOM-MX93-STK-100x100.jpg 100w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/VAR-SOM-MX93-STK-60x60.jpg 60w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/VAR-SOM-MX93-STK-90x90.jpg 90w" sizes="(max-width: 444px) 100vw, 444px" /><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/thumb-VAR-SOM-MX93-evaluation-kits.png" alt="VAR-SOM-MX93 Evaluation Kits"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">VAR-SOM-MX93 Evaluation Kits</h2>
+<span class="price">Starting from: <strong class="amount">&#36;249.00</strong></span></div><div class="product_short_description"><p>VAR-SOM-MX93 Development Kit and Starter Kit, based on NXP i.MX 93 processor.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx93-evaluation-kits/" data-quantity="1" class="button add_to_cart_button" data-type="Evaluation kit" data-price="249" data-product_id="17132" data-product_sku="" data-name="VAR-SOM-MX93 Evaluation Kits"  aria-label="Select options for “VAR-SOM-MX93 Evaluation Kits”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left product type-product post-17125 status-publish last instock product_cat-system-on-module has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/system-on-module/var-som-mx93-system-on-module/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/thumb-VAR-SOM-MX93-System-on-Module.png" alt="VAR-SOM-MX93 System on Module"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">VAR-SOM-MX93 System on Module</h2>
+<span class="price">Starting from: <strong class="amount">&#36;39.00</strong></span></div><div class="product_short_description"><p>VAR-SOM-MX93 System on Module, based on NXP i.MX 93.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/system-on-module/var-som-mx93-system-on-module/" data-quantity="1" class="button add_to_cart_button" data-type="System on Module" data-price="39" data-product_id="17125" data-product_sku="" data-name="VAR-SOM-MX93 System on Module"  aria-label="Select options for “VAR-SOM-MX93 System on Module”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left wc-has-gallery product type-product post-17490 status-publish first instock product_cat-evaluation-kit has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-am62-evaluation-kits/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="444" height="444" src="https://shop-office.variscite.co.uk/wp-content/uploads/2023/12/VAR-SOM-AM62_STK.jpg" class="secondary-image attachment-shop-catalog" alt="VAR-SOM-AM62 STK" decoding="async" srcset="https://shop-office.variscite.co.uk/wp-content/uploads/2023/12/VAR-SOM-AM62_STK.jpg 444w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/12/VAR-SOM-AM62_STK-300x300.jpg 300w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/12/VAR-SOM-AM62_STK-150x150.jpg 150w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/12/VAR-SOM-AM62_STK-100x100.jpg 100w" sizes="(max-width: 444px) 100vw, 444px" /><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/thumb-VAR-SOM-AM62-evaluation-kits.png" alt="VAR-SOM-AM62 Evaluation Kits"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">VAR-SOM-AM62 Evaluation Kits</h2>
+<span class="price">Starting from: <strong class="amount">&#36;249.00</strong></span></div><div class="product_short_description"><p>VAR-SOM-AM62 Development Kit and Starter Kit, based on TI AM625x processor.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-am62-evaluation-kits/" data-quantity="1" class="button add_to_cart_button" data-type="Evaluation kit" data-price="249" data-product_id="17490" data-product_sku="" data-name="VAR-SOM-AM62 Evaluation Kits"  aria-label="Select options for “VAR-SOM-AM62 Evaluation Kits”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left product type-product post-17485 status-publish last instock product_cat-system-on-module has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/system-on-module/var-som-am62-system-on-module/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2023/01/thumb-VAR-SOM-AM62-System-on-Module.png" alt="VAR-SOM-AM62 System on Module"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">VAR-SOM-AM62 System on Module</h2>
+<span class="price">Starting from: <strong class="amount">&#36;33.00</strong></span></div><div class="product_short_description"><p>VAR-SOM-AM62 System on Module, based on TI AM625x.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/system-on-module/var-som-am62-system-on-module/" data-quantity="1" class="button add_to_cart_button" data-type="System on Module" data-price="33" data-product_id="17485" data-product_sku="" data-name="VAR-SOM-AM62 System on Module"  aria-label="Select options for “VAR-SOM-AM62 System on Module”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left wc-has-gallery product type-product post-13306 status-publish first instock product_cat-evaluation-kit has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8m-plus-evaluation-kits/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="444" height="444" src="https://shop-office.variscite.co.uk/wp-content/uploads/2021/07/shop-STK.jpg" class="secondary-image attachment-shop-catalog" alt="VAR-SOM-MX8M-WIFI-6-PLUS-STK" decoding="async" srcset="https://shop-office.variscite.co.uk/wp-content/uploads/2021/07/shop-STK.jpg 444w, https://shop-office.variscite.co.uk/wp-content/uploads/2021/07/shop-STK-300x300.jpg 300w, https://shop-office.variscite.co.uk/wp-content/uploads/2021/07/shop-STK-150x150.jpg 150w, https://shop-office.variscite.co.uk/wp-content/uploads/2021/07/shop-STK-100x100.jpg 100w" sizes="(max-width: 444px) 100vw, 444px" /><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2024/03/thumb-VAR-SOM-MX8M-Vi-Fi-6-PLUS-evaluation-kit_420_280.png" alt="VAR-SOM-MX8M-PLUS Evaluation Kits"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">VAR-SOM-MX8M-PLUS Evaluation Kits</h2>
+<span class="price">Starting from: <strong class="amount">&#36;269.00</strong></span></div><div class="product_short_description"><p>VAR-SOM-MX8M-PLUS Development Kit and Starter Kit, based on NXP i.MX 8M Plus processor.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8m-plus-evaluation-kits/" data-quantity="1" class="button add_to_cart_button" data-type="Evaluation kit" data-price="269" data-product_id="13306" data-product_sku="" data-name="VAR-SOM-MX8M-PLUS Evaluation Kits"  aria-label="Select options for “VAR-SOM-MX8M-PLUS Evaluation Kits”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left product type-product post-13325 status-publish last instock product_cat-system-on-module has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/system-on-module/var-som-mx8m-plus-system-on-module/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2021/07/thumb-VAR-SOM-MX8M-PLUS-WiFi-6-SoM.png" alt="VAR-SOM-MX8M-PLUS System on Module"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">VAR-SOM-MX8M-PLUS System on Module</h2>
+<span class="price">Starting from: <strong class="amount">&#36;58.00</strong></span></div><div class="product_short_description"><p>VAR-SOM-MX8M-PLUS System on Module, based on NXP i.MX8M Plus.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/system-on-module/var-som-mx8m-plus-system-on-module/" data-quantity="1" class="button add_to_cart_button" data-type="System on Module" data-price="58" data-product_id="13325" data-product_sku="" data-name="VAR-SOM-MX8M-PLUS System on Module"  aria-label="Select options for “VAR-SOM-MX8M-PLUS System on Module”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left wc-has-gallery product type-product post-13311 status-publish first instock product_cat-evaluation-kit has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/evaluation-kit/dart-mx8m-plus-evaluation-kits/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="300" height="300" src="https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/DART-MX8M-PLUS-STK-300x300.jpg" class="secondary-image attachment-shop-catalog" alt="DART-MX8M-PLUS-STK" decoding="async" srcset="https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/DART-MX8M-PLUS-STK-300x300.jpg 300w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/DART-MX8M-PLUS-STK-150x150.jpg 150w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/DART-MX8M-PLUS-STK-100x100.jpg 100w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/DART-MX8M-PLUS-STK-60x60.jpg 60w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/DART-MX8M-PLUS-STK-90x90.jpg 90w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/DART-MX8M-PLUS-STK.jpg 444w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2021/07/thumb-DART-MX8M-PLUS-evaluation-kits.png" alt="DART-MX8M-PLUS Evaluation Kits"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">DART-MX8M-PLUS Evaluation Kits</h2>
+<span class="price">Starting from: <strong class="amount">&#36;269.00</strong></span></div><div class="product_short_description"><p>DART-MX8M-PLUS Development Kit and Starter Kit, based on NXP i.MX 8M Plus processor.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/dart-mx8m-plus-evaluation-kits/" data-quantity="1" class="button add_to_cart_button" data-type="Evaluation kit" data-price="269" data-product_id="13311" data-product_sku="" data-name="DART-MX8M-PLUS Evaluation Kits"  aria-label="Select options for “DART-MX8M-PLUS Evaluation Kits”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left product type-product post-13323 status-publish last instock product_cat-system-on-module has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/system-on-module/dart-mx8m-plus-system-on-module/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2021/07/thumb-DART-MX8M-PLUS-System-on-Module.png" alt="DART-MX8M-PLUS System on Module"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">DART-MX8M-PLUS System on Module</h2>
+<span class="price">Starting from: <strong class="amount">&#36;59.00</strong></span></div><div class="product_short_description"><p>DART-MX8M-PLUS System on Module, based on NXP i.MX 8M Plus.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/system-on-module/dart-mx8m-plus-system-on-module/" data-quantity="1" class="button add_to_cart_button" data-type="System on Module" data-price="59" data-product_id="13323" data-product_sku="" data-name="DART-MX8M-PLUS System on Module"  aria-label="Select options for “DART-MX8M-PLUS System on Module”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left wc-has-gallery product type-product post-11011 status-publish first instock product_cat-evaluation-kit has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8m-nano-evaluation-kits/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="300" height="300" src="https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/VAR-SOM-MX8M-NANO-STK-300x300.jpg" class="secondary-image attachment-shop-catalog" alt="VAR-SOM-MX8M-NANO-STK" decoding="async" srcset="https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/VAR-SOM-MX8M-NANO-STK-300x300.jpg 300w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/VAR-SOM-MX8M-NANO-STK-150x150.jpg 150w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/VAR-SOM-MX8M-NANO-STK-100x100.jpg 100w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/VAR-SOM-MX8M-NANO-STK-60x60.jpg 60w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/VAR-SOM-MX8M-NANO-STK-90x90.jpg 90w, https://shop-office.variscite.co.uk/wp-content/uploads/2023/02/VAR-SOM-MX8M-NANO-STK.jpg 444w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2020/03/thumb-VAR-SOM-MX8M-NANO-evaluation-kits.png" alt="VAR-SOM-MX8M-NANO Evaluation Kits"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">VAR-SOM-MX8M-NANO Evaluation Kits</h2>
+<span class="price">Starting from: <strong class="amount">&#36;249.00</strong></span></div><div class="product_short_description"><p>VAR-SOM-MX8M-NANO Development Kit and Starter Kit, based on NXP i.MX 8M NANO processor.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8m-nano-evaluation-kits/" data-quantity="1" class="button add_to_cart_button" data-type="Evaluation kit" data-price="249" data-product_id="11011" data-product_sku="" data-name="VAR-SOM-MX8M-NANO Evaluation Kits"  aria-label="Select options for “VAR-SOM-MX8M-NANO Evaluation Kits”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left product type-product post-11008 status-publish last instock product_cat-system-on-module has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/system-on-module/var-som-mx8m-nano-system-on-module/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2020/03/thumb-VAR-SOM-MX8M-NANO-System-on-Module.png" alt="VAR-SOM-MX8M-NANO System on Module"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">VAR-SOM-MX8M-NANO System on Module</h2>
+<span class="price">Starting from: <strong class="amount">&#36;44.00</strong></span></div><div class="product_short_description"><p>VAR-SOM-MX8M-NANO System on Module, based on NXP i.MX 8M Nano.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/system-on-module/var-som-mx8m-nano-system-on-module/" data-quantity="1" class="button add_to_cart_button" data-type="System on Module" data-price="44" data-product_id="11008" data-product_sku="" data-name="VAR-SOM-MX8M-NANO System on Module"  aria-label="Select options for “VAR-SOM-MX8M-NANO System on Module”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left wc-has-gallery product type-product post-10870 status-publish first instock product_cat-evaluation-kit has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8m-mini-evaluation-kits/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="444" height="444" src="https://shop-office.variscite.co.uk/wp-content/uploads/2020/02/shop-STK.jpg" class="secondary-image attachment-shop-catalog" alt="VAR-SOM-MX8M-MINI-STK" decoding="async" srcset="https://shop-office.variscite.co.uk/wp-content/uploads/2020/02/shop-STK.jpg 444w, https://shop-office.variscite.co.uk/wp-content/uploads/2020/02/shop-STK-300x300.jpg 300w, https://shop-office.variscite.co.uk/wp-content/uploads/2020/02/shop-STK-150x150.jpg 150w, https://shop-office.variscite.co.uk/wp-content/uploads/2020/02/shop-STK-100x100.jpg 100w" sizes="(max-width: 444px) 100vw, 444px" /><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2020/02/thumb-VAR-SOM-MX8M-MINI-evaluation-kits.png" alt="VAR-SOM-MX8M-MINI Evaluation Kits"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">VAR-SOM-MX8M-MINI Evaluation Kits</h2>
+<span class="price">Starting from: <strong class="amount">&#36;249.00</strong></span></div><div class="product_short_description"><p>VAR-SOM-MX8M-MINI Development Kit and Starter Kit, based on NXP i.MX 8M MINI processor.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8m-mini-evaluation-kits/" data-quantity="1" class="button add_to_cart_button" data-type="Evaluation kit" data-price="249" data-product_id="10870" data-product_sku="" data-name="VAR-SOM-MX8M-MINI Evaluation Kits"  aria-label="Select options for “VAR-SOM-MX8M-MINI Evaluation Kits”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left product type-product post-10865 status-publish last instock product_cat-system-on-module has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/system-on-module/var-som-mx8m-mini-system-on-module/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2020/02/thumb-VAR-SOM-MX8M-MINI.png" alt="VAR-SOM-MX8M-MINI System on Module"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">VAR-SOM-MX8M-MINI System on Module</h2>
+<span class="price">Starting from: <strong class="amount">&#36;50.00</strong></span></div><div class="product_short_description"><p>VAR-SOM-MX8M-MINI System on Module, based on NXP i.MX8M Mini.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/system-on-module/var-som-mx8m-mini-system-on-module/" data-quantity="1" class="button add_to_cart_button" data-type="System on Module" data-price="50" data-product_id="10865" data-product_sku="" data-name="VAR-SOM-MX8M-MINI System on Module"  aria-label="Select options for “VAR-SOM-MX8M-MINI System on Module”">Order</a></li>
+<li class="sales-flash-overlay woocommerce-text-align-left woocommerce-image-align-left wc-has-gallery product type-product post-9296 status-publish first instock product_cat-evaluation-kit has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+    <a href="https://shop-office.variscite.co.uk/product/evaluation-kit/dart-mx8m-mini-evaluation-kits/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="wc-product-image"><div class="inside-wc-product-image"><img loading="lazy" width="444" height="444" src="https://shop-office.variscite.co.uk/wp-content/uploads/2019/06/DART-MX8M-MINI-STK.jpg" class="secondary-image attachment-shop-catalog" alt="DART-MX8M-MINI-STK" decoding="async" srcset="https://shop-office.variscite.co.uk/wp-content/uploads/2019/06/DART-MX8M-MINI-STK.jpg 444w, https://shop-office.variscite.co.uk/wp-content/uploads/2019/06/DART-MX8M-MINI-STK-300x300.jpg 300w, https://shop-office.variscite.co.uk/wp-content/uploads/2019/06/DART-MX8M-MINI-STK-150x150.jpg 150w, https://shop-office.variscite.co.uk/wp-content/uploads/2019/06/DART-MX8M-MINI-STK-100x100.jpg 100w" sizes="(max-width: 444px) 100vw, 444px" /><img loading="lazy" width="93" height="140" src="https://shop-office.variscite.co.uk/wp-content/uploads/2019/06/thumb-DART-MX8M-Mini-Evaluation-kit.png" alt="DART-MX8M-MINI Evaluation Kits"></div></div><div class="wc-product-name-price"><h2 class="woocommerce-loop-product__title">DART-MX8M-MINI Evaluation Kits</h2>
+<span class="price">Starting from: <strong class="amount">&#36;249.00</strong></span></div><div class="product_short_description"><p>DART-MX8M-MINI Development Kit and Starter Kit, based on NXP i.MX 8M MINI processor.</p>
+</div></a><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/dart-mx8m-mini-evaluation-kits/" data-quantity="1" class="button add_to_cart_button" data-type="Evaluation kit" data-price="249" data-product_id="9296" data-product_sku="" data-name="DART-MX8M-MINI Evaluation Kits"  aria-label="Select options for “DART-MX8M-MINI Evaluation Kits”">Order</a></li>
+</ul>
+</div>
+    <div class="woocommerce-pagination">
+
+        
+        <div><span>1</span> of 4</div>
+        <a href="https://shop-office.variscite.co.uk/page/2/" class="next">Next</a>    </div>
+    						</div>
+											</div>
+				</div>
+							</main>
+		</div>
+		<div class="widget-area sidebar is-left-sidebar grid-20 tablet-grid-20 mobile-grid-100 grid-parent pull-80 tablet-pull-80" id="left-sidebar">
+	<div class="inside-left-sidebar">
+		<aside id="custom_html-4" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"><span id="dismiss"><i class="fa fa-times" aria-hidden="true"></i></span></div></aside><aside id="custom_html-3" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget">		    <style type="text/css">
+        .filter_section .filter_container {
+            padding: 23px 21px;
+        }
+
+        .filter_section .filter_container .filter_item {
+            padding: 10px 10px 10px 0px;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-start;
+            color: #fff;
+            display: table-cell;
+        }
+
+        span.removeFilterCross {
+            color: #fff;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            display: table-cell;
+        }
+
+        .filter_section .filter_container .removeFilterCross .filter_item {
+            padding: 0;
+            margin: 0;
+            font-size: 17px;
+        }
+    </style>
+    <div class="filter_section" >
+        <div class="filter_title">
+            <div>Filter by</div>
+            <div class="clear_all"><a href="https://shop-office.variscite.co.uk">Clear Filters</a></div>
+        </div>
+
+        <div class="filter_container">
+            <ul class="filters-list row">
+                            </ul>
+        </div>
+    </div>
+
+
+</div></aside><aside id="nav_menu-3" class="widget inner-padding widget_nav_menu"><h2 class="widget-title">CPU Name</h2><div class="menu-attributes-menu-container"><ul id="menu-attributes-menu" class="menu"><li id="menu-item-17415" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17415"><a title="nxp-i-mx93" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-i-mx93">NXP i.MX93</a></li>
+<li id="menu-item-17543" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17543"><a title="TI AM625x" href="https://shop-office.variscite.co.uk/?cpu_name=TI%20AM625x">TI AM625x</a></li>
+<li id="menu-item-10069" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10069"><a title="nxp-i-mx8" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-i-mx8">NXP i.MX8</a></li>
+<li id="menu-item-428" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-428"><a title="nxp-i-mx6" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-i-mx6">NXP i.MX6</a></li>
+<li id="menu-item-748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-748"><a title="nxp-i-mx7" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-i-mx7">NXP i.MX7</a></li>
+<li id="menu-item-747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-747"><a title="nxp-i-mx-6ultralite-ull" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-i-mx-6ultralite-ull">NXP i.MX 6UltraLite/ ULL</a></li>
+<li id="menu-item-15476" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15476"><a title="nxp-i-mx-8m-plus" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-i-mx-8m-plus">NXP i.MX 8M Plus</a></li>
+<li id="menu-item-9324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9324"><a title="nxp-i-mx-8m-mini" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-i-mx-8m-mini">NXP i.MX 8M Mini</a></li>
+<li id="menu-item-15489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15489"><a title="nxp-i-mx-8m-nano" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-i-mx-8m-nano">NXP i.MX 8M Nano</a></li>
+<li id="menu-item-746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-746"><a title="nxp-i-mx-8m" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-i-mx-8m">NXP i.MX 8M</a></li>
+<li id="menu-item-10070" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10070"><a title="nxp-i-mx-8x" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-i-mx-8x">NXP i.MX 8X</a></li>
+<li id="menu-item-15497" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15497"><a title="nxp-imx8-quadmax-quadplus" href="https://shop-office.variscite.co.uk/?cpu_name=nxp-imx8-quadmax-quadplus">NXP iMX8 QuadMax / QuadPlus</a></li>
+</ul></div></aside><aside id="nav_menu-4" class="widget inner-padding widget_nav_menu"><h2 class="widget-title">Product Type</h2><div class="menu-product-type-container"><ul id="menu-product-type" class="menu"><li id="menu-item-514" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-514"><a title="evaluation-kit" href="https://shop-office.variscite.co.uk/?product_type=evaluation-kit">Evaluation kit</a></li>
+<li id="menu-item-515" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-515"><a title="system-on-module" href="https://shop-office.variscite.co.uk/?product_type=system-on-module">System on Module</a></li>
+<li id="menu-item-19531" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-19531"><a title="carrier-board" href="https://shop-office.variscite.co.uk/?product_type=carrier-board">Carrier board</a></li>
+<li id="menu-item-512" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-512"><a title="camera-modules" href="https://shop-office.variscite.co.uk/?product_type=camera-modules">Camera modules</a></li>
+<li id="menu-item-513" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-513"><a title="power-supplies" href="https://shop-office.variscite.co.uk/?product_type=power-supplies">Power supplies</a></li>
+<li id="menu-item-16120" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-16120"><a title="display" href="https://shop-office.variscite.co.uk/?product_type=display">Display</a></li>
+<li id="menu-item-16228" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-16228"><a title="heat-sink" href="https://shop-office.variscite.co.uk/?product_type=heat-sink">Heat sink</a></li>
+</ul></div></aside><aside id="nav_menu-2" class="widget inner-padding widget_nav_menu"><h2 class="widget-title">Evaluation kits by Name</h2><div class="menu-menu-2-container"><ul id="menu-menu-2" class="menu"><li id="menu-item-18605" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-18605"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-am62-evaluation-kits/">VAR-SOM-AM62 Evaluation Kits</a></li>
+<li id="menu-item-18606" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-18606"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx93-evaluation-kits/">VAR-SOM-MX93 Evaluation Kits</a></li>
+<li id="menu-item-14276" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-14276"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8m-plus-evaluation-kits/">VAR-SOM-MX8M-PLUS Evaluation Kits</a></li>
+<li id="menu-item-14275" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-14275"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/dart-mx8m-plus-evaluation-kits/">DART-MX8M-PLUS Evaluation Kits</a></li>
+<li id="menu-item-11168" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-11168"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8m-nano-evaluation-kits/">VAR-SOM-MX8M-NANO Evaluation Kits</a></li>
+<li id="menu-item-14277" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-14277"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8m-mini-evaluation-kits/">VAR-SOM-MX8M-MINI Evaluation Kits</a></li>
+<li id="menu-item-9325" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-9325"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/dart-mx8m-mini-evaluation-kits/">DART-MX8M-MINI Evaluation Kits</a></li>
+<li id="menu-item-817" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-817"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/dart-mx8m-evaluation-kits/">DART-MX8M Evaluation Kits</a></li>
+<li id="menu-item-10085" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-10085"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8x-evaluation-kits/">VAR-SOM-MX8X Evaluation Kits</a></li>
+<li id="menu-item-18609" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-18609"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx8-evaluation-kits/">VAR-SOM-MX8 Evaluation Kits</a></li>
+<li id="menu-item-18610" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-18610"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/spear-mx8-evaluation-kits/">SPEAR-MX8 Evaluation Kits</a></li>
+<li id="menu-item-9908" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-9908"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-6ul-evaluation-kits/">VAR-SOM-6UL Evaluation Kits</a></li>
+<li id="menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-818"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/dart-6ul-evaluation-kits/">DART-6UL Evaluation Kits</a></li>
+<li id="menu-item-819" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-819"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-solo-evaluation-kits/">VAR-SOM-SOLO Evaluation Kits</a></li>
+<li id="menu-item-823" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-823"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-dual-evaluation-kits/">VAR-SOM-DUAL Evaluation Kits</a></li>
+<li id="menu-item-837" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-837"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx7-evaluation-kits/">VAR-SOM-MX7 Evaluation Kits</a></li>
+<li id="menu-item-824" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-824"><a href="https://shop-office.variscite.co.uk/product/evaluation-kit/var-som-mx6-evaluation-kits/">VAR-SOM-MX6 Evaluation Kits</a></li>
+</ul></div></aside>	</div>
+</div>
+
+</div><!-- #content -->
+</div><!-- #page -->
+
+
+<div class="site-footer">
+    			<div id="footer-widgets" class="site footer-widgets">
+				<div class="footer-widgets-container">
+					<div class="inside-footer-widgets">
+							<div class="footer-widget-1 grid-parent grid-50 tablet-grid-50 mobile-grid-100">
+		<aside id="block-3" class="widget inner-padding widget_block widget_text">
+<p></p>
+</aside><aside id="custom_html-7" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"><ul class="footer_social mobile">
+	<li><a href="https://www.youtube.com/c/VarisciteLtd" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+	<li><a href="https://www.linkedin.com/company/variscite-ltd-/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+	<li><a href="https://twitter.com/Variscite_Ltd" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+	<li><a href="https://www.facebook.com/pages/Variscite-Ltd/323442114434181" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+	<li><a href="https://github.com/varigit" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+	<li><a href="https://www.xing.com/pages/variscite" target="_blank" rel="noopener"><i class="fa-brands fa-xing" aria-hidden="true"></i></a></li>
+</ul>
+<div class="footer_text">
+	Detailed hardware documentation can be found on <u><a href="https://www.variscite.com" target="_blank" rel="noopener">www.variscite.com</a></u> Software documentation and developer guides are detailed on <u><a href="https://variwiki.com" target="_blank" rel="noopener">variwiki.com.</a></u>
+For further support and access to the customer portal ticketing system, please approach your Variscite account manager
+</div>
+<ul class="footer_social desktop">
+	<li><a href="https://www.youtube.com/c/VarisciteLtd" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+	<li><a href="https://www.linkedin.com/company/variscite-ltd-/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+	<li><a href="https://twitter.com/Variscite_Ltd" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+	<li><a href="https://www.facebook.com/pages/Variscite-Ltd/323442114434181" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+	<li><a href="https://github.com/varigit" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+	<li><a href="https://www.xing.com/pages/variscite" target="_blank" rel="noopener"><i class="fa-brands fa-xing" aria-hidden="true"></i></a></li>
+</ul>
+
+<div class="footer_copy">
+	<div>© 2024 Variscite. All rights reserved.</div>
+	<div><a href="https://shop-office.variscite.co.uk/terms-and-conditions/">Terms & Conditions</a></div>
+	<div><a href="https://www.variscite.com/privacy-policy/">Privacy Policy</a></div>
+	<div><a href="https://shop-office.variscite.co.uk/terms-and-conditions/">Refund Policy</a></div>
+</div></div></aside>	</div>
+		<div class="footer-widget-2 grid-parent grid-50 tablet-grid-50 mobile-grid-100">
+		<aside id="text-5" class="widget inner-padding widget_text"><h2 class="widget-title">Sign up for our newsletter</h2>			<div class="textwidget">		<div class="newsletter-form-wrapper">
+			<form class="newsletter-form" method="post">
+				<div class="newsletter-form-fields">
+					<p>
+						<input type="text" name="firstname" placeholder="First Name">
+						<input type="text" name="lastname" placeholder="Last Name">
+					</p>
+
+					<p>
+						<input type="email" name="email" placeholder="Your email">
+					</p>
+
+					<p class="privacy-wrapper">
+						<label>
+							<input name="privacy" type="checkbox" value="1"><span>I agree to the Variscite <a href="https://www.variscite.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
+						</label>
+					</p>
+
+					<p class="submit-wrapper">
+						<input type="submit" class="btn btn-arrow-01" value="Sign up" />
+					</p>
+				</div>
+
+				<label class="company-wrapper">
+					Leave this field empty if you're human:
+					<input type="text" name="company-name" value="" tabindex="-1" autocomplete="off">
+				</label>
+
+				<input type="hidden" name="country" val="" />
+				<div class="newsletter-response">
+					<i class="fa fa-exclamation-triangle c6"></i><span></span>
+				</div>
+			</form>
+
+			<div class="thank-you-message">Thank you, your sign-up request was successful!</div>
+		</div>
+		
+</div>
+		</aside>	</div>
+						</div>
+				</div>
+			</div>
+					<footer class="site-info" aria-label="Site"  itemtype="https://schema.org/WPFooter" itemscope>
+			<div class="inside-site-info">
+								<div class="copyright-bar">
+					<span class="copyright">&copy; 2024 Variscite Online store</span> &bull; Built with <a href="https://generatepress.com" itemprop="url">GeneratePress</a>				</div>
+			</div>
+		</footer>
+		</div><!-- .site-footer -->
+
+
+    <style>
+        .is-visually-hidden {
+            opacity: 0;
+            position: absolute !important;
+            top: 0;
+            left: 0;
+        }
+    </style>
+
+    <script type="rocketlazyloadscript">
+        jQuery(window).on('load', function() {
+            prefill_from_localstorage();
+        });
+
+        var updated_checkout_from_localStorage = false;
+        jQuery('body').on('update_checkout update_order_review', function() {
+
+            setTimeout(function() {
+                if (!updated_checkout_from_localStorage) {
+                    updated_checkout_from_localStorage = true;
+                    prefill_from_localstorage();
+                }
+            }, 250);
+        });
+
+        function prefill_from_localstorage() {
+
+            if (localStorage.hasOwnProperty('sf_medium')) {
+
+                jQuery('[name="Campaign_medium__c"]').val(
+                    localStorage.getItem('sf_medium')
+                ).attr('value', localStorage.getItem('sf_medium'));
+            }
+
+            if (localStorage.hasOwnProperty('sf_source')) {
+
+                jQuery('[name="Campaign_source__c"]').val(
+                    localStorage.getItem('sf_source')
+                ).attr('value', localStorage.getItem('sf_source'));
+            }
+
+            if (localStorage.hasOwnProperty('sf_term')) {
+
+                jQuery('[name="Campaign_term__c"]').val(
+                    localStorage.getItem('sf_term')
+                ).attr('value', localStorage.getItem('sf_term'));
+            }
+
+            if (localStorage.hasOwnProperty('sf_campaign')) {
+
+                jQuery('[name="Paid_Campaign_Name__c"]').val(
+                    localStorage.getItem('sf_campaign')
+                ).attr('value', localStorage.getItem('sf_campaign'));
+            }
+
+            if (localStorage.hasOwnProperty('sf_content')) {
+
+                jQuery('[name="Campaign_content__c"]').val(
+                    localStorage.getItem('sf_content')
+                ).attr('value', localStorage.getItem('sf_content'));
+            }
+
+            // jQuery('input[name="GA_id__c"]').val(ga.getAll()[0].get('clientId')).attr('value', ga.getAll()[0].get('clientId'));
+            jQuery('input[name="Page_url__c"]').val(window.location.href).attr('value', window.location);
+            jQuery('input[name="curl"]').val(window.location.href).attr('value', window.location);
+        }
+    </script>
+
+    <script type="rocketlazyloadscript" id="generate-a11y">!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();</script><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"WebSite","name":"Variscite Online store","url":"https:\/\/shop-office.variscite.co.uk","potentialAction":{"@type":"SearchAction","target":"https:\/\/shop-office.variscite.co.uk\/?s={search_term_string}&amp;post_type=product","query-input":"required name=search_term_string"}}</script>	<script type="rocketlazyloadscript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='wc-blocks-style-css' href='https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-8.8.3' media='all' />
+<script id="wcml-mc-scripts-js-extra">
+var wcml_mc_settings = {"wcml_spinner":"https:\/\/woocommerce-689526-4599505.cloudwaysapps.com\/wp-content\/plugins\/sitepress-multilingual-cms\/res\/img\/ajax-loader.gif","current_currency":{"code":"USD","symbol":"&#36;"},"cache_enabled":""};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce-multilingual/res/js/wcml-multi-currency.min.js?ver=5.3.6" id="wcml-mc-scripts-js" defer data-wp-strategy="defer"></script>
+<script id="newsletter-js-js-extra">
+var varinews = {"ajax_url":"https:\/\/shop-office.variscite.co.uk\/wp-admin\/admin-ajax.php","mc_nonce":"e140da7bc9","mc_action":"update_mailchimp_user"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/variscite-salesforce//assets/js/newsletter.js?ver=6.5.2" id="newsletter-js-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://www.google.com/recaptcha/api.js?ver=6.5.2" id="recaptcha-js-js"></script>
+<script id="form-js-js-extra">
+var variform = {"post_id":"21724","ajax_url":"https:\/\/shop-office.variscite.co.uk\/wp-admin\/admin-ajax.php"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/variscite-salesforce//assets/js/form.js?ver=6.5.2" id="form-js-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=8.8.3" id="sourcebuster-js-js" defer></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"ajaxurl":"https:\/\/shop-office.variscite.co.uk\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=8.8.3" id="wc-order-attribution-js" defer></script>
+<!--[if lte IE 11]>
+<script src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.4.0" id="generate-classlist-js"></script>
+<![endif]-->
+<script id="generate-menu-js-extra">
+var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub-Menu","closeSubMenuLabel":"Close Sub-Menu"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress/assets/js/menu.min.js?ver=3.4.0" id="generate-menu-js" defer></script>
+<script id="cart-widget-js-extra">
+var actions = {"is_lang_switched":"0","force_reset":"0"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/woocommerce-multilingual/res/js/cart_widget.min.js?ver=5.3.6" id="cart-widget-js" defer data-wp-strategy="defer"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/plugins/gp-premium/woocommerce/functions/js/woocommerce.min.js?ver=1.7.2" id="generate-woocommerce-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/bootstrap/js/bootstrap.min.js?ver=1.0.0" id="bootstrap-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/js/stickykit.jquery.js?ver=1.0.0" id="sticky-sidebar-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/js/validation.js?ver=1.0.0" id="form-validation-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/js/scripts.js?ver=1716968541" id="child-scripts-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://woocommerce-689526-4599505.cloudwaysapps.com/wp-content/themes/generatepress-child/slick/slick.min.js?ver=1.0.0" id="slick-js" defer></script>
+		<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		/* <![CDATA[ */
+			if( typeof woocommerce_price_slider_params !== 'undefined' ) {
+				woocommerce_price_slider_params.currency_format_symbol = wcml_mc_settings.current_currency.symbol;
+			}
+		/* ]]> */
+		</script>
+		
+<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1716969822 -->

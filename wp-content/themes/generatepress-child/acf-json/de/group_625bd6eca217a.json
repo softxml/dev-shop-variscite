@@ -1,0 +1,59 @@
+{
+    "key": "group_625bd6eca217a",
+    "title": "Product Specification URLs - DE",
+    "fields": [
+        {
+            "key": "field_625bd6f66bbd1",
+            "label": "Product Specifications URL",
+            "name": "product_specifications_url",
+            "type": "url",
+            "instructions": "For all products (will be shown under 'Kit Specifications' for Kits)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_625bd7026bbd2",
+            "label": "Kit Specifications",
+            "name": "kit_specifications_url",
+            "type": "url",
+            "instructions": "For Kit products only. Will be shown under the 'Kit Specifications' button.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "wpml_field_group_language": "de",
+    "modified": 1660051133
+}

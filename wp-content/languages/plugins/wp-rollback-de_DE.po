@@ -1,0 +1,72 @@
+# Translation of Plugins - WP Rollback &#8211; Rollback Plugins and Themes - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - WP Rollback &#8211; Rollback Plugins and Themes - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-03-28 18:13:59+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - WP Rollback &#8211; Rollback Plugins and Themes - Stable (latest release)\n"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: wp-rollback.php
+msgid "https://wprollback.com/"
+msgstr "https://wprollback.com/"
+
+#. translators: %s Link.
+#: wp-rollback.php:278
+msgid "Sorry, we couldn't find a changelog entry found for this version. Try checking the <a href=\"%s\" target=\"_blank\">developer log</a> on WP.org."
+msgstr "Wir konnten für diese Version leider keinen Eintrag im Änderungsprotokoll finden. Versuche im <a href=\"%s\" target=\"_blank\">Entwicklungs-Protokoll</a> auf WP.org etwas zu finden."
+
+#. Description of the plugin
+#: wp-rollback.php
+msgid "Rollback (or forward) any WordPress.org plugin, theme or block like a boss."
+msgstr "Setze die Version eines beliebigen WordPress.org-Plugins, -Themes oder Blocks zurück (oder vor)."
+
+#: wp-rollback.php:634
+msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
+msgstr "(WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte wende dich an deinen Server-Administrator.)"
+
+#: wp-rollback.php:631
+msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"https://wordpress.org/support/\">support forums</a>."
+msgstr "Ein unerwarteter Fehler ist aufgetreten. Möglicherweise stimmt etwas mit WordPress.org oder dieser Serverkonfiguration nicht. Wenn du weiterhin Probleme hast, besuche bitte die <a href=\"https://wordpress.org/support/\">Support-Foren</a>."
+
+#: wp-rollback.php:359
+msgid "You do not have sufficient permissions to perform rollbacks for this site."
+msgstr "Du hast nicht die erforderlichen Rechte, um für diese Website ein Rollback durchzuführen."
+
+#: wp-rollback.php:284
+msgid "Please select a version number to perform a rollback."
+msgstr "Bitte wähle eine Versionsnummer, um ein Rollback durchzuführen."
+
+#: wp-rollback.php:246 build/admin.js:1
+msgid "Loading..."
+msgstr "Wird geladen …"
+
+#: wp-rollback.php:242
+msgid "No Rollback Available: This is a non-WordPress.org theme."
+msgstr "Es ist kein Rollback verfügbar: Dies ist kein WordPress.org-Theme."
+
+#: wp-rollback.php:142 wp-rollback.php:154
+msgid "Cheatin&#8217; huh?"
+msgstr "Du schummelst, hm?"
+
+#: src/class-rollback-multisite-compatibility.php:83 wp-rollback.php:241
+#: wp-rollback.php:403 wp-rollback.php:404 wp-rollback.php:514 build/admin.js:1
+#: build/admin.js:4
+msgid "Rollback"
+msgstr "Rollback"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: wp-rollback.php build/admin.js:1
+msgid "WP Rollback"
+msgstr "WP Rollback"
+
+#: src/rollback-action.php:49
+msgid "This rollback request is missing a proper query string. Please contact support."
+msgstr "Für dieses Rollback fehlt eine passende Abfrage-Zeichenfolge. Bitte kontaktiere den Support."

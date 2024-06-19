@@ -1,0 +1,57 @@
+{
+    "key": "group_5c4345095d646",
+    "title": "Kit Type",
+    "fields": [
+        {
+            "key": "field_5c4345095fc71",
+            "label": "Kit Type",
+            "name": "variscite_ups_kit_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "sm-starter": "Small Starter Kit",
+                "lg-starter": "Large Starter Kit",
+                "sm-dev": "Small Development Kit",
+                "lg-dev": "Large Development Kit"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "pa_kit"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_rest": false,
+    "wpml_field_group_language": "en",
+    "modified": 1714977465,
+    "local_file": "\/home\/689526.cloudwaysapps.com\/fdhtdvrfjr\/public_html\/wp-content\/themes\/generatepress-child\/acf-json\/en\/group_5c4345095d646.json",
+    "acfml_field_group_mode": "advanced"
+}
